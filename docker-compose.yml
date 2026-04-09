@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./tasks.json:/app/tasks.json
+    environment:
+      - NODE_ENV=production
